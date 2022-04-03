@@ -4,12 +4,13 @@
 <head>
     <script src="https://kit.fontawesome.com/15106f0a68.js" crossorigin="anonymous"></script>
     <meta charset="utf-8">
-    <title>BackdoorBench</title>
+    <title>BlackboxBench</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description"
-        content="BackdoorBench is a benchmark to fairly evaluate the performance of backdoor attack and defense methods, and provides an easy implememntation for ones who want to replicate classic backdoor methods.">
-    <meta name="keywords" content="Backdoor Benchmark, Backdoor Attack, Backdoor Defense, AI Security, Adversarial">
-    <meta name="author" content="BackdoorBench">
+        content="BlackboxBench is a benchmark to fairly evaluate the performance of blackbox attack methods against deep learning models,
+        and provides an easy implememntation of mainstream black-box attack methods to facilitate future research.">
+    <meta name="keywords" content="Black-box Attack Benchmark, AI Security, Adversarial">
+    <meta name="author" content="BlackboxBench">
     <link rel="icon" href="image/favicon.ico">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/fonts.css">
@@ -20,7 +21,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="index.html"><b>BackdoorBench</b></a>
+            <a class="navbar-brand" href="index.html"><b>BlackboxBench</b></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#content"
                 aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -32,7 +33,7 @@
                         <a class="nav-link" href="index.html"><b>Home</b></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="https://github.com/SCLBD/bdzoo2/tree/merged" target="_blank">Code</a>
+                        <a class="nav-link" href="https://github.com/SCLBD/B-box" target="_blank">Code</a>
                     </li>
 
                     <li class="nav-item dropdown">
@@ -63,7 +64,7 @@
 
     <div class="jumbotron">
         <div class="container">
-            <p class="lead sharepoint-dark-blue">A Comprehensive Benchmark for Evaluating Backdoor Attacks and Defenses
+            <p class="lead sharepoint-dark-blue">A Comprehensive Benchmark for Evaluating Black-box Attacks
             </p>
         </div>
     </div>
@@ -73,24 +74,17 @@
     <div class="container" align="justify">
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thumb">
-                <h4>What is BackdoorBench?</h4>
+                <h4>What is BlackboxBench?</h4>
                 <hr>
             </div>
         </div>
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thumb">
                 <p>
-                    Backdoor learning is an emerging topic of studying the adversarial vulnerability of machine learning
-                    models during the training stage.
-                    Many backdoor attack and defense methods have been developed in recent ML and Security
-                    conferences/journals.
-                    It is important to build a benchmark to review the current progress and facilitate future research
-                    in backdoor learning.
-                    <br>
-                    <br>
-                    BackdoorBench aims to provide an easy implementation of both backdoor attack and backdoor defense
-                    methods to facilitate future research,
-                    as well as a comprehensive evaluation of existing attack and defense methods. We mainly provide:
+                    BlackboxBench is a toolbox of implementing mainstream adversarial black-box attack methods.
+                    It can be used to evaluate the adversarial robustness of any ML models, or as the baseline to develop more advanced
+                    attack and defense methods.
+                    We mainly provide:
                 </p>
             </div>
         </div>
@@ -98,17 +92,20 @@
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thumb">
                 <ul>
                     <li> <a href="https://github.com/SCLBD/bdzoo2/tree/merged"><b>Easy implementations</b></a>: we
-                        provide the implementations of several
-                        classic and lastest methods, including <b>6 attack</b> and <b>6 defense</b> methods.
-                        Instead of implementing each individual method separately, we try to unify the workflow of
-                        different methods, by extracting some shared modules.
-                        Consequently, it can not only ensure fair implementations of different methods, but also
-                        facilitate other researchers to quickly implement their new methhods.
+                        provide the implementations of 15 query-based black-box attack methods,
+                        covering both score-based and decision-based attacks:
+                           <ul>
+                              <li>
+                                <b>7 score-based attacks</b>: NES, ZOSignSGD, Bandit-prior, ECO attack, SimBA, SignHunter, Sqaure attack.
+                              </li>
+                              <li>
+                                <b>8 decision-based attacks</b>: Boundary attack, OPT attack, Sign-OPT, Evoluationary attack, GeoDA, HSJA, Sign Flip, RayS.
+                              </li>
+                          </ul>
                     </li>
                     <li> <a href="leaderboard-cifar10.html"><b>A public leaderboard</b></a>: we evaluate above attack
-                        and defense methods on three widely used databases (including <b>CIFAR-10</b>, <b>GTSRB</b>,
-                        <b>Tiny&nbsp;ImageNet</b>), and three CNN models (including <b>Resnet18</b>,
-                        <b>PreactResnet18</b>, <b>VGG19</b>).
+                        methods against several undefended and defended deep models, on two widely used databases (including CIFAR-10,
+                        ImageNet).
                     </li>
                 </ul>
             </div>
@@ -116,56 +113,14 @@
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thumb">
                 <p>
-                    This benchmark will be continuously updated to track the lastest advances of backddor learning,
-                    including the implementations of more backddor methods, as well as their evaluations in the
+                    This benchmark will be continuously updated to track the lastest advances of black-box attacks,
+                    including the implementations of more (query and transfer-based) black-box attack and defense methods, as well as their evaluations in the
                     leaderboard.
-                    You are welcome to contribute your backdoor methods to BackdoorBench.
+                    <b>You are welcome to contribute your backdoor methods to BackdoorBench.</b>
                 </p>
             </div>
         </div>
 
-    </div>
-
-    <br />
-
-
-    <div class="container" align="justify">
-        <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thumb">
-                <h4>Related Work</h4>
-                <hr>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thumb">
-                <p> If interested, you can read our recent works about backdoor learning,
-                    and more works about trustworthy AI can be found <a
-                        href="https://sites.google.com/site/baoyuanwu2015/home"><b>here</b></a>.</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thumb">
-                <pre><code>
-@inproceedings{dbd-backdoor-defense-iclr2022,
-title={Backdoor Defense via Decoupling the Training Process},
-author={Huang, Kunzhe and Li, Yiming and Wu, Baoyuan and Qin, Zhan and Ren, Kui},
-booktitle={International Conference on Learning Representations},
-year={2022}
-}</code></pre>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thumb">
-                <pre><code>
-@inproceedings{ssba-backdoor-attack-iccv2021,
-title={Invisible backdoor attack with sample-specific triggers},
-author={Li, Yuezun and Li, Yiming and Wu, Baoyuan and Li, Longkang and He, Ran and Lyu, Siwei},
-booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision},
-pages={16463--16472},
-year={2021}
-}</code></pre>
-            </div>
-        </div>
     </div>
 
     <br />
@@ -190,6 +145,86 @@ year={2021}
             </div>
         </div>
     </div>
+
+    <br />
+
+    <div class="container" align="justify">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thumb">
+                <h4>Related Work</h4>
+                <hr>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thumb">
+                <p> If interested, you can read our recent works about black-box attack and defense methods,
+                  and more works about trustworthy AI can be found <a
+                        href="https://sites.google.com/site/baoyuanwu2015/home"><b>here</b></a>.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thumb">
+                <pre><code>
+@inproceedings{cgattack-cvpr2022,
+  title={Boosting Black-Box Attack with Partially Transferred Conditional Adversarial Distribution},
+  author={Feng, Yan and Wu, Baoyuan and Fan, Yanbo and Liu, Li and Li, Zhifeng and Xia, Shutao},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  year={2022}
+}</code></pre>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thumb">
+                <pre><code>
+@article{rnd-blackbox-defense-nips2021,
+  title={Random Noise Defense Against Query-Based Black-Box Attacks},
+  author={Qin, Zeyu and Fan, Yanbo and Zha, Hongyuan and Wu, Baoyuan},
+  journal={Advances in Neural Information Processing Systems},
+  volume={34},
+  year={2021}
+}</code></pre>
+            </div>
+          </div>
+            <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thumb">
+                <pre><code>
+@inproceedings{liang2021parallel,
+  title={Parallel Rectangle Flip Attack: A Query-Based Black-Box Attack Against Object Detection},
+  author={Liang, Siyuan and Wu, Baoyuan and Fan, Yanbo and Wei, Xingxing and Cao, Xiaochun},
+  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision},
+  pages={7697--7707},
+  year={2021}
+}</code></pre>
+            </div>
+            </div>
+            <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thumb">
+                <pre><code>
+@inproceedings{chen2020boosting,
+  title={Boosting decision-based black-box adversarial attacks with random sign flip},
+  author={Chen, Weilun and Zhang, Zhaoxiang and Hu, Xiaolin and Wu, Baoyuan},
+  booktitle={European Conference on Computer Vision},
+  pages={276--293},
+  year={2020},
+  organization={Springer}
+}</code></pre>
+            </div>
+            </div>
+            <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thumb">
+<pre><code>
+@inproceedings{evolutionary-blackbox-attack-cvpr2019,
+  title={Efficient decision-based black-box adversarial attacks on face recognition},
+  author={Dong, Yinpeng and Su, Hang and Wu, Baoyuan and Li, Zhifeng and Liu, Wei and Zhang, Tong and Zhu, Jun},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={7714--7722},
+  year={2019}
+}</code></pre>
+            </div>
+            </div>
+    </div>
+
+    <br />
 
 
     <br />
