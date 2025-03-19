@@ -85,32 +85,34 @@
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thumb">
                 <p>
-                    BlackboxBench is a comprehensive benchmark containing mainstream adversarial black-box attack methods.
-                   
-                    It can be used to evaluate the adversarial robustness of any ML models, or as the baseline to develop more advanced
-                    attack and defense methods.
-                    We mainly provide:
+                    lackboxBench is a comprehensive benchmark containing mainstream adversarial black-box attack methods. 
+                    It can be used to evaluate the adversarial robustness of any ML models, or as the baseline to develop more advanced attack and defense methods. We mainly provide:
                 </p>
             </div>
         </div>
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thumb">
                 <ul>
-                    <li> <a href="https://github.com/SCLBD/BlackboxBench/tree/main"><b>Easy implementations</b></a>: we
-                        provide the implementations of 15 query-based black-box attack methods,
+                    <li> <a href="https://github.com/SCLBD/BlackboxBench/tree/main"><b>Easy implementations</b></a>: we 
+                        provide the implementations of 29 query-based black-box attack methods, covering both score-based and decision-based attacks, and 30 transfer-based attacks:
                         covering both score-based and decision-based attacks:
                            <ul>
                               <li>
-                                <b>7 score-based attacks</b>: NES, ZOSignSGD, Bandit-prior, ECO attack, SimBA, SignHunter, Sqaure attack.
+                                <b>16 score-based attacks</b>: NES, ZO-signSGD, Bandits, SimBA, SignHunter, Sqaure attack, Parsimonious attack, PPBA, BABIES, NP-attack, AdvFlow, CG-attack, MCG, PRGF, Subspace-attack, BASES.
                               </li>
                               <li>
-                                <b>8 decision-based attacks</b>: Boundary attack, OPT attack, Sign-OPT, Evoluationary attack, GeoDA, HSJA, Sign Flip, RayS.
+                                <b>13 decision-based attacks</b>: Boundary attack, OPT, Sign-OPT, Evoluationary attack, GeoDA, HSJA, SFA, Rays, Triangle attack, QEBA, Nonlinear-BA, PSBA, CISA.
+                              </li>
+                              <li>
+                                <b>29 transfer-based attacks</b>: PGD, TI-FGSM, SI-FGSM, Admix, DI2-FGSM, SIA, MI-FGSM, NI- FGSM, PI-FGSM, VT, RAP, LinBP, 
+                                SGM, PGN, ILA, FIA, NAA, RD, GhostNet, DRA, IAA, LGV, SWA, Bayesian attack, Logit ensemble, Loss ensemble, Longitudinal ensemble, 
+                                CWA, AdaEA. We also support users to easily customize their desired composite attacks, such as MI-DI, MI-DI-TI, MI- DI-TI-SI, VMI, VNI, 
+                                SI-RAP, LGV-GhostNet, by flexibly combining existing functional blocks.
                               </li>
                           </ul>
                     </li>
-                    <li> <a href="leaderboard-cifar10.html"><b>A public leaderboard</b></a>: we evaluate above attack
-                        methods against several undefended and defended deep models, on two widely used databases (including CIFAR-10,
-                        ImageNet).
+                    <li> <a href="leaderboard-cifar10.html"><b>A public leaderboard</b></a>: we evaluate above attack methods against several undefended and defended deep models, 
+                        on two widely used databases (including ImageNet, CIFAR-10).
                     </li>
                 </ul>
             </div>
@@ -118,9 +120,9 @@
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thumb">
                 <p>
-                    This benchmark will be continuously updated to track the lastest advances of black-box attacks,
-                    including the implementations of more (query and transfer-based) black-box attack and defense methods, as well as their evaluations in the
-                    leaderboard.
+                    This benchmark will be continuously updated to track the lastest advances of black-box attacks, 
+                    including the implementations of more (query and transfer-based) black-box attack and defense methods, 
+                    as well as their evaluations in the leaderboard.
                     <b>You are welcome to contribute your blackbox methods to BlackboxBench.</b>
                 </p>
             </div>
