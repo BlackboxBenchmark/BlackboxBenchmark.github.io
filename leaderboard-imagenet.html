@@ -14005,15 +14005,24 @@
                                 <colgroup span="3" class="wBackground"></colgroup>
                                 <colgroup span="3"></colgroup>
                                 <colgroup span="3" class="wBackground"></colgroup>
+                                <colgroup span="3"></colgroup>
+                                <colgroup span="3" class="wBackground"></colgroup>
+                                <colgroup span="3"></colgroup>
                                 <thead>
                                     <tr>
                                         </th>
-                                        <th class="sorttable_nosort" scope="col">　Model&nbsp;&nbsp;&rarr;</th>
+                                        <th class="sorttable_nosort" scope="col">Model&nbsp;&nbsp;&rarr;</th>
                                         <th class="sorttable_nosort" scope="col" colspan="3">ResNet-50</th>
-                                        <th class="sorttable_nosort" scope="col" colspan="3">Inception-v3</th>
-                                        <th class="sorttable_nosort" scope="col" colspan="3">AT model</th>
-                                        <th class="sorttable_nosort" scope="col" colspan="3">FastAT(56.90)</th>
+                                        <th class="sorttable_nosort" scope="col" colspan="3">VGG19-bn</th>
+                                        <th class="sorttable_nosort" scope="col" colspan="3">Inception-V3</th>
+                                        <th class="sorttable_nosort" scope="col" colspan="3">ConvNeXt-B</th>
+                                        <th class="sorttable_nosort" scope="col" colspan="3">ViT-B/16</th>
+                                        <th class="sorttable_nosort" scope="col" colspan="3">AT model(robust library)
+                                        </th>
+                                        <th class="sorttable_nosort" scope="col" colspan="3">AT model(FastAT)</th>
                                         <th class="sorttable_nosort" scope="col" colspan="3">RND</th>
+                                        <th class="sorttable_nosort" scope="col" colspan="3">AAA-Linear</th>
+                                        <th class="sorttable_nosort" scope="col" colspan="3">AAA-Sine</th>
                                     </tr>
                                     <tr>
                                         <th class="sorttable_nosort" scope="col" rowspan="2">Blackbox &nbsp;Attack&darr;
@@ -14033,117 +14042,25 @@
                                         <th scope="col">average number</th>
                                         <th scope="col">medium number</th>
                                         <th scope="col">ASR</th>
+                                        <th scope="col">average number</th>
+                                        <th scope="col">medium number</th>
+                                        <th scope="col">ASR</th>
+                                        <th scope="col">average number</th>
+                                        <th scope="col">medium number</th>
+                                        <th scope="col">ASR</th>
+                                        <th scope="col">average number</th>
+                                        <th scope="col">medium number</th>
+                                        <th scope="col">ASR</th>
+                                        <th scope="col">average number</th>
+                                        <th scope="col">medium number</th>
+                                        <th scope="col">ASR</th>
+                                        <th scope="col">average number</th>
+                                        <th scope="col">medium number</th>
+                                        <th scope="col">ASR</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
-                                        <td>NES</td>
-                                        <td>1031.9</td>
-                                        <td>720</td>
-                                        <td>1</td>
-                                        <td>1571.2</td>
-                                        <td>840</td>
-                                        <td>0.95</td>
-                                        <td>2113.4</td>
-                                        <td>1500</td>
-                                        <td>0.714</td>
-                                        <td>2578.8</td>
-                                        <td>1560</td>
-                                        <td>0.727</td>
-                                        <td>3084.5</td>
-                                        <td>1745</td>
-                                        <td>0.763</td>
-                                    </tr>
-                                    <tr>
-                                        <td>ZS</td>
-                                        <td>2013</td>
-                                        <td>1220</td>
-                                        <td>0.765</td>
-                                        <td>1316.7</td>
-                                        <td>671</td>
-                                        <td>0.896</td>
-                                        <td>1688.7</td>
-                                        <td>1037</td>
-                                        <td>0.875</td>
-                                        <td>1956.3</td>
-                                        <td>1152</td>
-                                        <td>0.897</td>
-                                        <td>2266.6</td>
-                                        <td>1243</td>
-                                        <td>0.645</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Bandit</td>
-                                        <td>392.2</td>
-                                        <td>58</td>
-                                        <td>0.98</td>
-                                        <td>903.1</td>
-                                        <td>142</td>
-                                        <td>0.95</td>
-                                        <td>1091.5</td>
-                                        <td>402</td>
-                                        <td>0.584</td>
-                                        <td>1700.5</td>
-                                        <td>612</td>
-                                        <td>0.643</td>
-                                        <td>789.4</td>
-                                        <td>567</td>
-                                        <td>0.453</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Parsimonious</td>
-                                        <td>347.7</td>
-                                        <td>241</td>
-                                        <td>1</td>
-                                        <td>853.2</td>
-                                        <td>258</td>
-                                        <td>0.973</td>
-                                        <td>1440.6</td>
-                                        <td>646</td>
-                                        <td>0.8</td>
-                                        <td>1374.2</td>
-                                        <td>901</td>
-                                        <td>0.842</td>
-                                        <td>2423.5</td>
-                                        <td>1765</td>
-                                        <td>0.465</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Sign Hunter</td>
-                                        <td>264.1</td>
-                                        <td>85</td>
-                                        <td>0.974</td>
-                                        <td>557.2</td>
-                                        <td>108</td>
-                                        <td>0.944</td>
-                                        <td>1522.7</td>
-                                        <td>258</td>
-                                        <td>0.811</td>
-                                        <td>1520.9</td>
-                                        <td>199</td>
-                                        <td>0.722</td>
-                                        <td>665.7</td>
-                                        <td>323</td>
-                                        <td>0.745</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Square</td>
-                                        <td>76.5</td>
-                                        <td>13</td>
-                                        <td>1</td>
-                                        <td>247.1</td>
-                                        <td>23</td>
-                                        <td>0.997</td>
-                                        <td>1109</td>
-                                        <td>143</td>
-                                        <td>0.841</td>
-                                        <td>693.8</td>
-                                        <td>108</td>
-                                        <td>0.842</td>
-                                        <td>95.6</td>
-                                        <td>23</td>
-                                        <td>0.894</td>
-                                    </tr>
+                                    
                                 </tbody>
                             </table>
                         </div>
@@ -14166,15 +14083,24 @@
                                 <colgroup span="3" class="wBackground"></colgroup>
                                 <colgroup span="3"></colgroup>
                                 <colgroup span="3" class="wBackground"></colgroup>
+                                <colgroup span="3"></colgroup>
+                                <colgroup span="3" class="wBackground"></colgroup>
+                                <colgroup span="3"></colgroup>
                                 <thead>
                                     <tr>
                                         </th>
-                                        <th class="sorttable_nosort" scope="col">　Model&nbsp;&nbsp;&rarr;</th>
+                                        <th class="sorttable_nosort" scope="col">Model&nbsp;&nbsp;&rarr;</th>
                                         <th class="sorttable_nosort" scope="col" colspan="3">ResNet-50</th>
-                                        <th class="sorttable_nosort" scope="col" colspan="3">Inception-v3</th>
-                                        <th class="sorttable_nosort" scope="col" colspan="3">AT model</th>
-                                        <th class="sorttable_nosort" scope="col" colspan="3">FastAT(56.90)</th>
+                                        <th class="sorttable_nosort" scope="col" colspan="3">VGG19-bn</th>
+                                        <th class="sorttable_nosort" scope="col" colspan="3">Inception-V3</th>
+                                        <th class="sorttable_nosort" scope="col" colspan="3">ConvNeXt-B</th>
+                                        <th class="sorttable_nosort" scope="col" colspan="3">ViT-B/16</th>
+                                        <th class="sorttable_nosort" scope="col" colspan="3">AT model(robust library)
+                                        </th>
+                                        <th class="sorttable_nosort" scope="col" colspan="3">AT model(FastAT)</th>
                                         <th class="sorttable_nosort" scope="col" colspan="3">RND</th>
+                                        <th class="sorttable_nosort" scope="col" colspan="3">AAA-Linear</th>
+                                        <th class="sorttable_nosort" scope="col" colspan="3">AAA-Sine</th>
                                     </tr>
                                     <tr>
                                         <th class="sorttable_nosort" scope="col" rowspan="2">Blackbox &nbsp;Attack&darr;
@@ -14194,99 +14120,25 @@
                                         <th scope="col">average number</th>
                                         <th scope="col">medium number</th>
                                         <th scope="col">ASR</th>
+                                        <th scope="col">average number</th>
+                                        <th scope="col">medium number</th>
+                                        <th scope="col">ASR</th>
+                                        <th scope="col">average number</th>
+                                        <th scope="col">medium number</th>
+                                        <th scope="col">ASR</th>
+                                        <th scope="col">average number</th>
+                                        <th scope="col">medium number</th>
+                                        <th scope="col">ASR</th>
+                                        <th scope="col">average number</th>
+                                        <th scope="col">medium number</th>
+                                        <th scope="col">ASR</th>
+                                        <th scope="col">average number</th>
+                                        <th scope="col">medium number</th>
+                                        <th scope="col">ASR</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
-                                        <td>NES</td>
-                                        <td>1335.2</td>
-                                        <td>1020</td>
-                                        <td>1</td>
-                                        <td>2048.6</td>
-                                        <td>1200</td>
-                                        <td>0.744</td>
-                                        <td>2365.1</td>
-                                        <td>1620</td>
-                                        <td>0.218</td>
-                                        <td>2194.3</td>
-                                        <td>1320</td>
-                                        <td>0.261</td>
-                                        <td>2023.5</td>
-                                        <td>1200</td>
-                                        <td>0.5</td>
-                                    </tr>
-                                    <tr>
-                                        <td>ZS</td>
-                                        <td>843.3</td>
-                                        <td>549</td>
-                                        <td>0.464</td>
-                                        <td>1642.6</td>
-                                        <td>1240</td>
-                                        <td>0.735</td>
-                                        <td>639.3</td>
-                                        <td>610</td>
-                                        <td>0.082</td>
-                                        <td>765.3</td>
-                                        <td>876</td>
-                                        <td>0.101</td>
-                                        <td>2134.7</td>
-                                        <td>145.6</td>
-                                        <td>0.355</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Bandit</td>
-                                        <td>856.5</td>
-                                        <td>512</td>
-                                        <td>1</td>
-                                        <td>1327.2</td>
-                                        <td>636</td>
-                                        <td>0.912</td>
-                                        <td>2769.2</td>
-                                        <td>1756</td>
-                                        <td>0.456</td>
-                                        <td>2434.8</td>
-                                        <td>1673</td>
-                                        <td>0.502</td>
-                                        <td>889.6</td>
-                                        <td>565</td>
-                                        <td>0.654</td>
-                                    </tr>
-                                    <tr>
-                                        <td>SimBA</td>
-                                        <td>1234.5</td>
-                                        <td>1120</td>
-                                        <td>0.686</td>
-                                        <td>2077.4</td>
-                                        <td>1398</td>
-                                        <td>0.805</td>
-                                        <td>2638.2</td>
-                                        <td>2081</td>
-                                        <td>0.349</td>
-                                        <td>2183.2</td>
-                                        <td>1934.5</td>
-                                        <td>0.401</td>
-                                        <td>1235.6</td>
-                                        <td>1120</td>
-                                        <td>0.644</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Square</td>
-                                        <td>612.1</td>
-                                        <td>174</td>
-                                        <td>0.99</td>
-                                        <td>1107.1</td>
-                                        <td>310</td>
-                                        <td>0.89</td>
-                                        <td>1404.3</td>
-                                        <td>330</td>
-                                        <td>0.472</td>
-                                        <td>1593.5</td>
-                                        <td>392</td>
-                                        <td>0.483</td>
-                                        <td>345.5</td>
-                                        <td>133</td>
-                                        <td>0.447</td>
-                                    </tr>
+                                    
                                 </tbody>
                             </table>
                         </div>
@@ -14311,15 +14163,24 @@
                                 <colgroup span="3" class="wBackground"></colgroup>
                                 <colgroup span="3"></colgroup>
                                 <colgroup span="3" class="wBackground"></colgroup>
+                                <colgroup span="3"></colgroup>
+                                <colgroup span="3" class="wBackground"></colgroup>
+                                <colgroup span="3"></colgroup>
                                 <thead>
                                     <tr>
                                         </th>
-                                        <th class="sorttable_nosort" scope="col">　Model&nbsp;&nbsp;&rarr;</th>
+                                        <th class="sorttable_nosort" scope="col">Model&nbsp;&nbsp;&rarr;</th>
                                         <th class="sorttable_nosort" scope="col" colspan="3">ResNet-50</th>
-                                        <th class="sorttable_nosort" scope="col" colspan="3">Inception-v3</th>
-                                        <th class="sorttable_nosort" scope="col" colspan="3">AT model</th>
-                                        <th class="sorttable_nosort" scope="col" colspan="3">FastAT(56.90)</th>
+                                        <th class="sorttable_nosort" scope="col" colspan="3">VGG19-bn</th>
+                                        <th class="sorttable_nosort" scope="col" colspan="3">Inception-V3</th>
+                                        <th class="sorttable_nosort" scope="col" colspan="3">ConvNeXt-B</th>
+                                        <th class="sorttable_nosort" scope="col" colspan="3">ViT-B/16</th>
+                                        <th class="sorttable_nosort" scope="col" colspan="3">AT model(robust library)
+                                        </th>
+                                        <th class="sorttable_nosort" scope="col" colspan="3">AT model(FastAT)</th>
                                         <th class="sorttable_nosort" scope="col" colspan="3">RND</th>
+                                        <th class="sorttable_nosort" scope="col" colspan="3">AAA-Linear</th>
+                                        <th class="sorttable_nosort" scope="col" colspan="3">AAA-Sine</th>
                                     </tr>
                                     <tr>
                                         <th class="sorttable_nosort" scope="col" rowspan="2">Blackbox &nbsp;Attack&darr;
@@ -14339,117 +14200,386 @@
                                         <th scope="col">average number</th>
                                         <th scope="col">medium number</th>
                                         <th scope="col">ASR</th>
+                                        <th scope="col">average number</th>
+                                        <th scope="col">medium number</th>
+                                        <th scope="col">ASR</th>
+                                        <th scope="col">average number</th>
+                                        <th scope="col">medium number</th>
+                                        <th scope="col">ASR</th>
+                                        <th scope="col">average number</th>
+                                        <th scope="col">medium number</th>
+                                        <th scope="col">ASR</th>
+                                        <th scope="col">average number</th>
+                                        <th scope="col">medium number</th>
+                                        <th scope="col">ASR</th>
+                                        <th scope="col">average number</th>
+                                        <th scope="col">medium number</th>
+                                        <th scope="col">ASR</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
-                                        <td>NES</td>
-                                        <td>28776.5</td>
-                                        <td>17640.5</td>
-                                        <td>0.885</td>
-                                        <td>33456.1</td>
-                                        <td>17665</td>
-                                        <td>0.795</td>
-                                        <td>32345.6</td>
-                                        <td>23460</td>
-                                        <td>0.556</td>
-                                        <td>36549.4</td>
-                                        <td>24598</td>
-                                        <td>0.602</td>
-                                        <td>33567.1</td>
-                                        <td>21454</td>
-                                        <td>0.68</td>
-                                    </tr>
-                                    <tr>
-                                        <td>ZS</td>
-                                        <td>17640.5</td>
-                                        <td>8546</td>
-                                        <td>0.502</td>
-                                        <td>27894.6</td>
-                                        <td>13456</td>
-                                        <td>0.634</td>
-                                        <td>35673.2</td>
-                                        <td>24565</td>
-                                        <td>0.512</td>
-                                        <td>32122.4</td>
-                                        <td>26754</td>
-                                        <td>0.564</td>
-                                        <td>38746.5</td>
-                                        <td>20989</td>
-                                        <td>0.54</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Bandit</td>
-                                        <td>22454.7</td>
-                                        <td>16721</td>
-                                        <td>0.935</td>
-                                        <td>26789.3</td>
-                                        <td>18067</td>
-                                        <td>0.926</td>
-                                        <td>32134.5</td>
-                                        <td>30235</td>
-                                        <td>0.475</td>
-                                        <td>35233.4</td>
-                                        <td>29104</td>
-                                        <td>0.575</td>
-                                        <td>57894</td>
-                                        <td>35567</td>
-                                        <td>0.545</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Parsimonious</td>
-                                        <td>6946.7</td>
-                                        <td>4536</td>
-                                        <td>1</td>
-                                        <td>7076</td>
-                                        <td>5053</td>
-                                        <td>1</td>
-                                        <td>30456.4</td>
-                                        <td>14566</td>
-                                        <td>0.854</td>
-                                        <td>31245.3</td>
-                                        <td>15334</td>
-                                        <td>0.861</td>
-                                        <td>32176</td>
-                                        <td>25053</td>
-                                        <td>0.532</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Sign Hunter</td>
-                                        <td>8345.6</td>
-                                        <td>4788</td>
-                                        <td>1</td>
-                                        <td>8814.7</td>
-                                        <td>5481</td>
-                                        <td>0.987</td>
-                                        <td>24578.3</td>
-                                        <td>12434</td>
-                                        <td>0.833</td>
-                                        <td>29876.5</td>
-                                        <td>13443</td>
-                                        <td>0.865</td>
-                                        <td>23454.6</td>
-                                        <td>18081</td>
-                                        <td>0.79</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Square</td>
-                                        <td>4184.5</td>
-                                        <td>2784</td>
-                                        <td>1</td>
-                                        <td>4584.8</td>
-                                        <td>2859</td>
-                                        <td>1</td>
-                                        <td>21345.5</td>
-                                        <td>9865</td>
-                                        <td>0.852</td>
-                                        <td>22135.2</td>
-                                        <td>10334</td>
-                                        <td>0.875</td>
-                                        <td>23447.7</td>
-                                        <td>21345</td>
-                                        <td>0.786</td>
-                                    </tr>
+                                  <td>Parsimonious(ECO)</td>
+                                  <td>6946.7</td>
+                                  <td>4536</td>
+                                  <td>1</td>
+                                  <td>5897.2</td>
+                                  <td>3887</td>
+                                  <td>1</td>
+                                  <td>7076</td>
+                                  <td>5053</td>
+                                  <td>1</td>
+                                  <td>8456.5</td>
+                                  <td>4942</td>
+                                  <td>0.974</td>
+                                  <td>10324.8</td>
+                                  <td>5421</td>
+                                  <td>0.882</td>
+                                  <td>30456.4</td>
+                                  <td>14566</td>
+                                  <td>0.854</td>
+                                  <td>31245.3</td>
+                                  <td>15334</td>
+                                  <td>0.861</td>
+                                  <td>32176</td>
+                                  <td>25053</td>
+                                  <td>0.532</td>
+                                  <td>5874.2</td>
+                                  <td>3487</td>
+                                  <td>0.493</td>
+                                  <td>4475.5</td>
+                                  <td>3376</td>
+                                  <td>0.476</td>
+                                </tr>
+                                <tr>
+                                  <td>Square Attack</td>
+                                  <td>4184.5</td>
+                                  <td>2784</td>
+                                  <td>1</td>
+                                  <td>3678.4</td>
+                                  <td>2452</td>
+                                  <td>1</td>
+                                  <td>4584.8</td>
+                                  <td>2859</td>
+                                  <td>1</td>
+                                  <td>4567.3</td>
+                                  <td>2874</td>
+                                  <td>0.981</td>
+                                  <td>9423.2</td>
+                                  <td>4928</td>
+                                  <td>0.899</td>
+                                  <td>21345.5</td>
+                                  <td>9865</td>
+                                  <td>0.852</td>
+                                  <td>22135.2</td>
+                                  <td>10334</td>
+                                  <td>0.875</td>
+                                  <td>23447.7</td>
+                                  <td>21345</td>
+                                  <td>0.786</td>
+                                  <td>3789.4</td>
+                                  <td>2434</td>
+                                  <td>0.774</td>
+                                  <td>3175.4</td>
+                                  <td>2149</td>
+                                  <td>0.762</td>
+                                </tr>
+                                <tr>
+                                  <td>PPBA attack</td>
+                                  <td>10872.5</td>
+                                  <td>6792</td>
+                                  <td>1</td>
+                                  <td>8097.3</td>
+                                  <td>5439</td>
+                                  <td>1</td>
+                                  <td>13423.7</td>
+                                  <td>8744</td>
+                                  <td>0.966</td>
+                                  <td>12232.2</td>
+                                  <td>7423</td>
+                                  <td>0.981</td>
+                                  <td>14234.6</td>
+                                  <td>8919</td>
+                                  <td>0.895</td>
+                                  <td>19524.7</td>
+                                  <td>12425</td>
+                                  <td>0.858</td>
+                                  <td>16894.9</td>
+                                  <td>9842</td>
+                                  <td>0.864</td>
+                                  <td>25436.3</td>
+                                  <td>14542</td>
+                                  <td>0.764</td>
+                                  <td>8975.2</td>
+                                  <td>5742</td>
+                                  <td>0.742</td>
+                                  <td>7542.2</td>
+                                  <td>5642</td>
+                                  <td>0.736</td>
+                                </tr>
+                                <tr>
+                                  <td>NES</td>
+                                  <td>28776.5</td>
+                                  <td>18334</td>
+                                  <td>0.885</td>
+                                  <td>27892.2</td>
+                                  <td>17899</td>
+                                  <td>0.889</td>
+                                  <td>33456.1</td>
+                                  <td>17665</td>
+                                  <td>0.795</td>
+                                  <td>31842.7</td>
+                                  <td>19423</td>
+                                  <td>0.834</td>
+                                  <td>33421.6</td>
+                                  <td>20452</td>
+                                  <td>0.748</td>
+                                  <td>32345.6</td>
+                                  <td>23460</td>
+                                  <td>0.556</td>
+                                  <td>36549.4</td>
+                                  <td>24598</td>
+                                  <td>0.602</td>
+                                  <td>33567.1</td>
+                                  <td>21454</td>
+                                  <td>0.68</td>
+                                  <td>24524.1</td>
+                                  <td>16534</td>
+                                  <td>0.642</td>
+                                  <td>18542.5</td>
+                                  <td>14236</td>
+                                  <td>0.621</td>
+                                </tr>
+                                <tr>
+                                  <td>Bandit</td>
+                                  <td>22454.7</td>
+                                  <td>16721</td>
+                                  <td>0.935</td>
+                                  <td>21894.7</td>
+                                  <td>14524</td>
+                                  <td>0.935</td>
+                                  <td>26789.3</td>
+                                  <td>18067</td>
+                                  <td>0.926</td>
+                                  <td>26723.8</td>
+                                  <td>17284</td>
+                                  <td>0.902</td>
+                                  <td>29423.5</td>
+                                  <td>18454</td>
+                                  <td>0.792</td>
+                                  <td>32134.5</td>
+                                  <td>30235</td>
+                                  <td>0.475</td>
+                                  <td>35233.4</td>
+                                  <td>29104</td>
+                                  <td>0.575</td>
+                                  <td>57894</td>
+                                  <td>35567</td>
+                                  <td>0.545</td>
+                                  <td>19856.2</td>
+                                  <td>13452</td>
+                                  <td>0.514</td>
+                                  <td>18673.3</td>
+                                  <td>12448</td>
+                                  <td>0.497</td>
+                                </tr>
+                                <tr>
+                                  <td>ZOsign-SGD</td>
+                                  <td>17640.5</td>
+                                  <td>8546</td>
+                                  <td>0.502</td>
+                                  <td>14298.4</td>
+                                  <td>7997</td>
+                                  <td>0.549</td>
+                                  <td>27984.6</td>
+                                  <td>13456</td>
+                                  <td>0.634</td>
+                                  <td>21452.2</td>
+                                  <td>11232</td>
+                                  <td>0.483</td>
+                                  <td>21423.6</td>
+                                  <td>16534</td>
+                                  <td>0.411</td>
+                                  <td>35673.2</td>
+                                  <td>24565</td>
+                                  <td>0.512</td>
+                                  <td>32122.4</td>
+                                  <td>26754</td>
+                                  <td>0.564</td>
+                                  <td>38746.5</td>
+                                  <td>20989</td>
+                                  <td>0.54</td>
+                                  <td>14542.8</td>
+                                  <td>6542</td>
+                                  <td>0.498</td>
+                                  <td>13245.2</td>
+                                  <td>5986</td>
+                                  <td>0.464</td>
+                                </tr>
+                                <tr>
+                                  <td>Advﬂow</td>
+                                  <td>23675.2</td>
+                                  <td>9237</td>
+                                  <td>0.929</td>
+                                  <td>21349.8</td>
+                                  <td>7692</td>
+                                  <td>0.937</td>
+                                  <td>24249.6</td>
+                                  <td>15239</td>
+                                  <td>0.883</td>
+                                  <td>24985.5</td>
+                                  <td>10442</td>
+                                  <td>0.911</td>
+                                  <td>26523.9</td>
+                                  <td>18423</td>
+                                  <td>0.887</td>
+                                  <td>31693.8</td>
+                                  <td>21424</td>
+                                  <td>0.676</td>
+                                  <td>32459.2</td>
+                                  <td>20485</td>
+                                  <td>0.712</td>
+                                  <td>42345.5</td>
+                                  <td>17582</td>
+                                  <td>0.748</td>
+                                  <td>18653.4</td>
+                                  <td>7653</td>
+                                  <td>0.675</td>
+                                  <td>17212.8</td>
+                                  <td>6978</td>
+                                  <td>0.653</td>
+                                </tr>
+                                <tr>
+                                  <td>SignHunter</td>
+                                  <td>8345.6</td>
+                                  <td>4788</td>
+                                  <td>1</td>
+                                  <td>6872.7</td>
+                                  <td>4421</td>
+                                  <td>1</td>
+                                  <td>8814.7</td>
+                                  <td>5481</td>
+                                  <td>0.987</td>
+                                  <td>9423.4</td>
+                                  <td>5873</td>
+                                  <td>0.986</td>
+                                  <td>13424.2</td>
+                                  <td>9423</td>
+                                  <td>0.901</td>
+                                  <td>14578.4</td>
+                                  <td>11342</td>
+                                  <td>0.833</td>
+                                  <td>29876.5</td>
+                                  <td>13443</td>
+                                  <td>0.865</td>
+                                  <td>23454.6</td>
+                                  <td>18081</td>
+                                  <td>0.79</td>
+                                  <td>7423.2</td>
+                                  <td>3224</td>
+                                  <td>0.724</td>
+                                  <td>6894.3</td>
+                                  <td>3116</td>
+                                  <td>0.687</td>
+                                </tr>
+                                <tr>
+                                  <td>NP-attack</td>
+                                  <td>14788.6</td>
+                                  <td>8745</td>
+                                  <td>0.976</td>
+                                  <td>12792.6</td>
+                                  <td>7424</td>
+                                  <td>0.981</td>
+                                  <td>20459.7</td>
+                                  <td>9450</td>
+                                  <td>0.952</td>
+                                  <td>16332.7</td>
+                                  <td>9421</td>
+                                  <td>0.978</td>
+                                  <td>23342.8</td>
+                                  <td>12425</td>
+                                  <td>0.923</td>
+                                  <td>26423.4</td>
+                                  <td>13067</td>
+                                  <td>0.694</td>
+                                  <td>27534.2</td>
+                                  <td>14231</td>
+                                  <td>0.871</td>
+                                  <td>35452.1</td>
+                                  <td>15682</td>
+                                  <td>0.783</td>
+                                  <td>12495.4</td>
+                                  <td>7584</td>
+                                  <td>0.694</td>
+                                  <td>11452.8</td>
+                                  <td>6755</td>
+                                  <td>0.675</td>
+                                </tr>
+                                <tr>
+                                  <td>CG-attack</td>
+                                  <td>6598.2</td>
+                                  <td>4382</td>
+                                  <td>0.985</td>
+                                  <td>5824.6</td>
+                                  <td>3847</td>
+                                  <td>0.986</td>
+                                  <td>7898.3</td>
+                                  <td>5132</td>
+                                  <td>0.976</td>
+                                  <td>7423.8</td>
+                                  <td>5274</td>
+                                  <td>0.984</td>
+                                  <td>9843.2</td>
+                                  <td>5422</td>
+                                  <td>0.941</td>
+                                  <td>9134.8</td>
+                                  <td>6116</td>
+                                  <td>0.713</td>
+                                  <td>9423.2</td>
+                                  <td>6449</td>
+                                  <td>0.759</td>
+                                  <td>13254.5</td>
+                                  <td>8952</td>
+                                  <td>0.815</td>
+                                  <td>5876.7</td>
+                                  <td>3985</td>
+                                  <td>0.784</td>
+                                  <td>5158.2</td>
+                                  <td>3214</td>
+                                  <td>0.767</td>
+                                </tr>
+                                <tr>
+                                  <td>MCG</td>
+                                  <td>3345.1</td>
+                                  <td>2678</td>
+                                  <td>1</td>
+                                  <td>2748.3</td>
+                                  <td>2124</td>
+                                  <td>1</td>
+                                  <td>3785.4</td>
+                                  <td>2674</td>
+                                  <td>1</td>
+                                  <td>4022.6</td>
+                                  <td>2843</td>
+                                  <td>1</td>
+                                  <td>5423.2</td>
+                                  <td>2934</td>
+                                  <td>0.953</td>
+                                  <td>4876.4</td>
+                                  <td>3681</td>
+                                  <td>0.887</td>
+                                  <td>5842</td>
+                                  <td>3942</td>
+                                  <td>0.896</td>
+                                  <td>7924.5</td>
+                                  <td>4557</td>
+                                  <td>0.867</td>
+                                  <td>2957.6</td>
+                                  <td>2455</td>
+                                  <td>0.845</td>
+                                  <td>2542.6</td>
+                                  <td>2352</td>
+                                  <td>0.833</td>
+                                </tr>
                                 </tbody>
                             </table>
                         </div>
@@ -14473,15 +14603,24 @@
                                 <colgroup span="3" class="wBackground"></colgroup>
                                 <colgroup span="3"></colgroup>
                                 <colgroup span="3" class="wBackground"></colgroup>
+                                <colgroup span="3"></colgroup>
+                                <colgroup span="3" class="wBackground"></colgroup>
+                                <colgroup span="3"></colgroup>
                                 <thead>
                                     <tr>
                                         </th>
-                                        <th class="sorttable_nosort" scope="col">　Model&nbsp;&nbsp;&rarr;</th>
+                                        <th class="sorttable_nosort" scope="col">Model&nbsp;&nbsp;&rarr;</th>
                                         <th class="sorttable_nosort" scope="col" colspan="3">ResNet-50</th>
-                                        <th class="sorttable_nosort" scope="col" colspan="3">Inception-v3</th>
-                                        <th class="sorttable_nosort" scope="col" colspan="3">AT model</th>
-                                        <th class="sorttable_nosort" scope="col" colspan="3">FastAT(56.90)</th>
+                                        <th class="sorttable_nosort" scope="col" colspan="3">VGG19-bn</th>
+                                        <th class="sorttable_nosort" scope="col" colspan="3">Inception-V3</th>
+                                        <th class="sorttable_nosort" scope="col" colspan="3">ConvNeXt-B</th>
+                                        <th class="sorttable_nosort" scope="col" colspan="3">ViT-B/16</th>
+                                        <th class="sorttable_nosort" scope="col" colspan="3">AT model(robust library)
+                                        </th>
+                                        <th class="sorttable_nosort" scope="col" colspan="3">AT model(FastAT)</th>
                                         <th class="sorttable_nosort" scope="col" colspan="3">RND</th>
+                                        <th class="sorttable_nosort" scope="col" colspan="3">AAA-Linear</th>
+                                        <th class="sorttable_nosort" scope="col" colspan="3">AAA-Sine</th>
                                     </tr>
                                     <tr>
                                         <th class="sorttable_nosort" scope="col" rowspan="2">Blackbox &nbsp;Attack&darr;
@@ -14501,99 +14640,321 @@
                                         <th scope="col">average number</th>
                                         <th scope="col">medium number</th>
                                         <th scope="col">ASR</th>
+                                        <th scope="col">average number</th>
+                                        <th scope="col">medium number</th>
+                                        <th scope="col">ASR</th>
+                                        <th scope="col">average number</th>
+                                        <th scope="col">medium number</th>
+                                        <th scope="col">ASR</th>
+                                        <th scope="col">average number</th>
+                                        <th scope="col">medium number</th>
+                                        <th scope="col">ASR</th>
+                                        <th scope="col">average number</th>
+                                        <th scope="col">medium number</th>
+                                        <th scope="col">ASR</th>
+                                        <th scope="col">average number</th>
+                                        <th scope="col">medium number</th>
+                                        <th scope="col">ASR</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
-                                        <td>NES</td>
-                                        <td>21094.4</td>
-                                        <td>12114</td>
-                                        <td>0.633</td>
-                                        <td>18544.2</td>
-                                        <td>13268</td>
-                                        <td>0.574</td>
-                                        <td></td>
-                                        <td></td>
-                                        <td>0</td>
-                                        <td></td>
-                                        <td></td>
-                                        <td>0</td>
-                                        <td>54234.2</td>
-                                        <td>32368</td>
-                                        <td>0.342</td>
-                                    </tr>
-                                    <tr>
-                                        <td>ZS</td>
-                                        <td>19993.4</td>
-                                        <td>12234.5</td>
-                                        <td>0.504</td>
-                                        <td>19875.4</td>
-                                        <td>13453</td>
-                                        <td>0.435</td>
-                                        <td></td>
-                                        <td></td>
-                                        <td>0</td>
-                                        <td></td>
-                                        <td></td>
-                                        <td>0</td>
-                                        <td>54878.3</td>
-                                        <td>34453</td>
-                                        <td>0.323</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Bandit</td>
-                                        <td>22367.8</td>
-                                        <td>15443</td>
-                                        <td>0.782</td>
-                                        <td>21345.6</td>
-                                        <td>16589</td>
-                                        <td>0.745</td>
-                                        <td>22670.4</td>
-                                        <td>15443</td>
-                                        <td>0.113</td>
-                                        <td>24553.4</td>
-                                        <td>14877</td>
-                                        <td>0.141</td>
-                                        <td>40984.3</td>
-                                        <td>37645</td>
-                                        <td>0.622</td>
-                                    </tr>
-                                    <tr>
-                                        <td>SimBA</td>
-                                        <td>19887.4</td>
-                                        <td>11234.5</td>
-                                        <td>0.652</td>
-                                        <td>23425.3</td>
-                                        <td>12347</td>
-                                        <td>0.604</td>
-                                        <td>21093.6</td>
-                                        <td>13446</td>
-                                        <td>0.076</td>
-                                        <td>21886.7</td>
-                                        <td>12345</td>
-                                        <td>0.121</td>
-                                        <td>39085.5</td>
-                                        <td>27644</td>
-                                        <td>0.442</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Square</td>
-                                        <td>18944.3</td>
-                                        <td>14556.3</td>
-                                        <td>0.721</td>
-                                        <td>19884.3</td>
-                                        <td>15946.4</td>
-                                        <td>0.665</td>
-                                        <td>20448.4</td>
-                                        <td>13442</td>
-                                        <td>0.124</td>
-                                        <td>22010.2</td>
-                                        <td>11990</td>
-                                        <td>0.162</td>
-                                        <td>45875.6</td>
-                                        <td>38755</td>
-                                        <td>0.503</td>
-                                    </tr>
+                                  <tr>
+                                    <td>SimBA</td>
+                                    <td>19887.4</td>
+                                    <td>11235</td>
+                                    <td>0.652</td>
+                                    <td>17324.5</td>
+                                    <td>10482</td>
+                                    <td>0.683</td>
+                                    <td>23425.3</td>
+                                    <td>12347</td>
+                                    <td>0.604</td>
+                                    <td>22498.3</td>
+                                    <td>14232</td>
+                                    <td>0.624</td>
+                                    <td>28423.9</td>
+                                    <td>18434</td>
+                                    <td>0.587</td>
+                                    <td>21093.6</td>
+                                    <td>13446</td>
+                                    <td>0.076</td>
+                                    <td>21886.7</td>
+                                    <td>12345</td>
+                                    <td>0.121</td>
+                                    <td>39085.5</td>
+                                    <td>27644</td>
+                                    <td>0.442</td>
+                                    <td>18456.2</td>
+                                    <td>9745</td>
+                                    <td>0.323</td>
+                                    <td>17842.2</td>
+                                    <td>8423</td>
+                                    <td>0.379</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Square Attack</td>
+                                    <td>18944.3</td>
+                                    <td>14556</td>
+                                    <td>0.721</td>
+                                    <td>15342.7</td>
+                                    <td>13243</td>
+                                    <td>0.752</td>
+                                    <td>19884.3</td>
+                                    <td>15946.4</td>
+                                    <td>0.665</td>
+                                    <td>19047.3</td>
+                                    <td>11425</td>
+                                    <td>0.703</td>
+                                    <td>26743.8</td>
+                                    <td>17423</td>
+                                    <td>0.623</td>
+                                    <td>20448.4</td>
+                                    <td>13442</td>
+                                    <td>0.124</td>
+                                    <td>22010.2</td>
+                                    <td>11990</td>
+                                    <td>0.162</td>
+                                    <td>45875.6</td>
+                                    <td>38755</td>
+                                    <td>0.503</td>
+                                    <td>16534.2</td>
+                                    <td>12336</td>
+                                    <td>0.245</td>
+                                    <td>16985.4</td>
+                                    <td>13124</td>
+                                    <td>0.232</td>
+                                  </tr>
+                                  <tr>
+                                    <td>PPBA attack</td>
+                                    <td>15789.8</td>
+                                    <td>13872</td>
+                                    <td>0.737</td>
+                                    <td>12398.2</td>
+                                    <td>11989</td>
+                                    <td>0.759</td>
+                                    <td>18742.5</td>
+                                    <td>13246.9</td>
+                                    <td>0.641</td>
+                                    <td>16352.8</td>
+                                    <td>13374</td>
+                                    <td>0.729</td>
+                                    <td>20424.6</td>
+                                    <td>16842</td>
+                                    <td>0.612</td>
+                                    <td>16342.2</td>
+                                    <td>14233</td>
+                                    <td>0.138</td>
+                                    <td>17542.4</td>
+                                    <td>15232</td>
+                                    <td>0.149</td>
+                                    <td>34523.9</td>
+                                    <td>29452</td>
+                                    <td>0.492</td>
+                                    <td>14324.1</td>
+                                    <td>11424</td>
+                                    <td>0.266</td>
+                                    <td>13498.2</td>
+                                    <td>10456</td>
+                                    <td>0.254</td>
+                                  </tr>
+                                  <tr>
+                                    <td>NES</td>
+                                    <td>21094.4</td>
+                                    <td>12114</td>
+                                    <td>0.633</td>
+                                    <td>19873.9</td>
+                                    <td>12039</td>
+                                    <td>0.676</td>
+                                    <td>18544.2</td>
+                                    <td>13268</td>
+                                    <td>0.574</td>
+                                    <td>28493.4</td>
+                                    <td>16245</td>
+                                    <td>0.593</td>
+                                    <td>34252.4</td>
+                                    <td>22434</td>
+                                    <td>0.532</td>
+                                    <td>100000</td>
+                                    <td>100000</td>
+                                    <td>0</td>
+                                    <td>100000</td>
+                                    <td>100000</td>
+                                    <td>0</td>
+                                    <td>54234.2</td>
+                                    <td>32368</td>
+                                    <td>0.342</td>
+                                    <td>24365.4</td>
+                                    <td>10452</td>
+                                    <td>0.158</td>
+                                    <td>27953.3</td>
+                                    <td>10434</td>
+                                    <td>0.147</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Bandit</td>
+                                    <td>22367.8</td>
+                                    <td>15443</td>
+                                    <td>0.782</td>
+                                    <td>18742.4</td>
+                                    <td>13279</td>
+                                    <td>0.803</td>
+                                    <td>21345.6</td>
+                                    <td>16589</td>
+                                    <td>0.745</td>
+                                    <td>29842.3</td>
+                                    <td>17849</td>
+                                    <td>0.762</td>
+                                    <td>32495.1</td>
+                                    <td>20242</td>
+                                    <td>0.718</td>
+                                    <td>22670.4</td>
+                                    <td>15443</td>
+                                    <td>0.113</td>
+                                    <td>24553.4</td>
+                                    <td>14877</td>
+                                    <td>0.141</td>
+                                    <td>40984.5</td>
+                                    <td>37645</td>
+                                    <td>0.622</td>
+                                    <td>20438.2</td>
+                                    <td>13453</td>
+                                    <td>0.298</td>
+                                    <td>19443.2</td>
+                                    <td>13221</td>
+                                    <td>0.284</td>
+                                  </tr>
+                                  <tr>
+                                    <td>ZOsign-SGD</td>
+                                    <td>19993.4</td>
+                                    <td>12234.5</td>
+                                    <td>0.504</td>
+                                    <td>21493.6</td>
+                                    <td>11425</td>
+                                    <td>0.567</td>
+                                    <td>19875.4</td>
+                                    <td>13453</td>
+                                    <td>0.435</td>
+                                    <td>23495.7</td>
+                                    <td>16722</td>
+                                    <td>0.463</td>
+                                    <td>24254.8</td>
+                                    <td>18423</td>
+                                    <td>0.407</td>
+                                    <td>　</td>
+                                    <td>　</td>
+                                    <td>0</td>
+                                    <td>　</td>
+                                    <td>　</td>
+                                    <td>0</td>
+                                    <td>54878.3</td>
+                                    <td>34453</td>
+                                    <td>0.323</td>
+                                    <td>14523.6</td>
+                                    <td>11424</td>
+                                    <td>0.113</td>
+                                    <td>13953.4</td>
+                                    <td>10788</td>
+                                    <td>0.101</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Advﬂow</td>
+                                    <td>25673.9</td>
+                                    <td>11748</td>
+                                    <td>0.792</td>
+                                    <td>23797.4</td>
+                                    <td>10942</td>
+                                    <td>0.812</td>
+                                    <td>33942.7</td>
+                                    <td>18242</td>
+                                    <td>0.768</td>
+                                    <td>28475.8</td>
+                                    <td>14289</td>
+                                    <td>0.776</td>
+                                    <td>29843.7</td>
+                                    <td>20324</td>
+                                    <td>0.733</td>
+                                    <td>26584.2</td>
+                                    <td>16424</td>
+                                    <td>0.159</td>
+                                    <td>27984.2</td>
+                                    <td>15425</td>
+                                    <td>0.198</td>
+                                    <td>68492.4</td>
+                                    <td>43241</td>
+                                    <td>0.694</td>
+                                    <td>26423.5</td>
+                                    <td>13242</td>
+                                    <td>0.334</td>
+                                    <td>25439.2</td>
+                                    <td>12443</td>
+                                    <td>0.312</td>
+                                  </tr>
+                                  <tr>
+                                    <td>NP-attack</td>
+                                    <td>18428.9</td>
+                                    <td>9786</td>
+                                    <td>0.811</td>
+                                    <td>16589.3</td>
+                                    <td>8642</td>
+                                    <td>0.82</td>
+                                    <td>22384.2</td>
+                                    <td>11894</td>
+                                    <td>0.774</td>
+                                    <td>20481.7</td>
+                                    <td>12742</td>
+                                    <td>0.798</td>
+                                    <td>25423.2</td>
+                                    <td>15232</td>
+                                    <td>0.752</td>
+                                    <td>18235.2</td>
+                                    <td>10231</td>
+                                    <td>0.147</td>
+                                    <td>19425</td>
+                                    <td>13241</td>
+                                    <td>0.21</td>
+                                    <td>44256.7</td>
+                                    <td>21424</td>
+                                    <td>0.651</td>
+                                    <td>14234.9</td>
+                                    <td>7688</td>
+                                    <td>0.275</td>
+                                    <td>13459.2</td>
+                                    <td>7456</td>
+                                    <td>0.268</td>
+                                  </tr>
+                                  <tr>
+                                    <td>BABIES</td>
+                                    <td>22873.6</td>
+                                    <td>17453</td>
+                                    <td>0.823</td>
+                                    <td>20587.1</td>
+                                    <td>16231</td>
+                                    <td>0.831</td>
+                                    <td>29344.8</td>
+                                    <td>19242</td>
+                                    <td>0.807</td>
+                                    <td>25423.6</td>
+                                    <td>15243</td>
+                                    <td>0.801</td>
+                                    <td>28425.4</td>
+                                    <td>18423</td>
+                                    <td>0.781</td>
+                                    <td>24234</td>
+                                    <td>18423</td>
+                                    <td>0.135</td>
+                                    <td>25623.4</td>
+                                    <td>14523</td>
+                                    <td>0.165</td>
+                                    <td>53245.1</td>
+                                    <td>19524</td>
+                                    <td>0.717</td>
+                                    <td>19534.4</td>
+                                    <td>14232</td>
+                                    <td>0.317</td>
+                                    <td>17934.2</td>
+                                    <td>15632</td>
+                                    <td>0.298</td>
+                                  </tr>
                                 </tbody>
                             </table>
                         </div>
